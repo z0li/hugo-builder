@@ -2,7 +2,7 @@ FROM ruby:2.6-alpine3.9
 
 ENV HUGO_VERSION=0.55.4
 
-RUN apk add --no-cache build-base libcurl && \
+RUN apk add --no-cache bash build-base libcurl && \
     gem install --no-document html-proofer
 
 RUN mkdir /tmp/hugo && \
