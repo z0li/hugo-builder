@@ -1,6 +1,6 @@
 FROM ruby:2.6-alpine3.9
 
-ENV HUGO_VERSION=0.55.4
+ENV HUGO_VERSION=0.55.5
 
 RUN apk add --no-cache make gcc libc-dev bash libcurl ruby-nokogiri \
       openssh-client rsync git && \
